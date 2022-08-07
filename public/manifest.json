@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "customize newtab",
+  "version": "0.1",
+  
+  "chrome_url_overrides": {
+    "newtab": "index.html"
+  },
+  "permission":[
+    "storage"
+  ]
+}
