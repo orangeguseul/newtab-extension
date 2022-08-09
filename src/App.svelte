@@ -13,7 +13,7 @@ let FormEntered = (event)=>{
 <main>
   
     <form action="get" class="grid" on:submit={FormEntered}>
-      <input type="text" bind:value = {keyword} class="bg-white justify-self-center rounded-lg w-96 h-10 mt-56 font-sans focus: outline-none caret-slate-400">
+      <input type="text" bind:value = {keyword} class="bg-white justify-self-center rounded-lg w-96 h-10 mt-56 font-sans border-slate-400 border-2 focus: outline-none caret-slate-400">
       <input type="submit" class="invisible">
     </form>
   <Favorites/>
