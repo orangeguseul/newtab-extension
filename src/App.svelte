@@ -5,8 +5,9 @@ import Favorites from "./favorite.svelte";
 let keyword
 let FormEntered = (event)=>{
   event.preventDefault()
-  location.href = `https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=${keyword}`
-}
+  location.href = `https://www.google.co.kr/search?q=${keyword}`
+}// google:https://www.google.co.kr/search?q=
+// naver:https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=
 
 </script>
 <Tailwindcss/>
@@ -23,4 +24,5 @@ let FormEntered = (event)=>{
   :global(body){
     background-color: #34d399;
   }
+  
 </style>
