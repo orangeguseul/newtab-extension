@@ -1,12 +1,8 @@
 <script>
   let favorites = [{name:'google',url:'www.google.com'}, {name:'naver',url:'www.naver.com'}, {name:'youtube',url:'www.youtube.com'}];
-  import Tailwindcss from './Tailwindcss.svelte';
-  import plfavorite from './plus_favorite.svelte'
-  import {PlusActive} from './plus_favorite.svelte'
 </script>
 
 <main>
-  <Tailwindcss/>
   <div class="grid">
     <div class="grid grid-cols-2 w-7/12 justify-self-center mt-6 sm:grid-cols-2  gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-10 lg:w-1/3">
       {#each favorites as favorite}

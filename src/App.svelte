@@ -1,16 +1,16 @@
 <script>
   // @ts-ignore
-import Tailwindcss from "./Tailwindcss.svelte";
 import Favorites from "./favorite.svelte";
 let keyword
 let FormEntered = (event)=>{
   event.preventDefault()
   location.href = `https://www.google.co.kr/search?q=${keyword}`
-}// google:https://www.google.co.kr/search?q=
+}
+// google:https://www.google.co.kr/search?q=
 // naver:https://search.naver.com/search.naver?where=nexearch&sm=top_hty&fbm=1&ie=utf8&query=
 
 </script>
-<Tailwindcss/>
+
 <main>
   
     <form action="get" class="grid" on:submit={FormEntered}>
@@ -18,6 +18,7 @@ let FormEntered = (event)=>{
       <input type="submit" class="invisible">
     </form>
   <Favorites/>
+  <link rel="stylesheet" href="../public/tailwind.css">
 </main>
 
 <style>
