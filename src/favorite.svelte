@@ -1,4 +1,6 @@
 <script>
+  import Plfavorite from './plus_favorite.svelte'
+  import { PlusActive } from './plus_favorite.svelte'
   let favorites = [{name:'google',url:'www.google.com'}, {name:'naver',url:'www.naver.com'}, {name:'youtube',url:'www.youtube.com'}];
 </script>
 
@@ -12,8 +14,8 @@
           </a>
         </div>
       {/each}
-      <!-- <div class=" bg-slate-200 w-32 h-20 text-center rounded-lg grid justify-items-center items-center click-motion" on:click={PlusActive = true} style="background-color: hsl(226, 232%, 240% ,0.5) "><img src="plus-solid.svg" alt="북마크 추가하기" class="w-10 h-10"></div> -->
-      <!-- <plfavorite/> -->
+      <div class=" bg-slate-200 w-32 h-20 text-center rounded-lg grid justify-items-center items-center click-motion" on:click={PlusActive.set(true)} style="background-color: hsl(226, 232%, 240% ,0.5) "><img src="plus-solid.svg" alt="북마크 추가하기" class="w-10 h-10"></div>
+      <Plfavorite/>
     </div>
   </div>
 </main>

@@ -1,6 +1,7 @@
 <script>
-  export let PlusActive = false;
-  let close = () => (PlusActive = false);
+  import { writable } from 'svelte/store'
+  export const PlusActive = writable(false);
+  let close = () => (PlusActive.set(true));
 </script>
 {#if PlusActive}
 <main
